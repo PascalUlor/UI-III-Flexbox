@@ -99,6 +99,16 @@ nav a:hover {
 }
 
 /* main section */
+#cover-image {
+	background: #fff url('../img/services-header.jpg') center center no-repeat;
+    color: white;
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 1.4rem;
+    margin-top: 5rem;
+}
 .container {
 	padding: 20px;
 	margin: auto;
@@ -164,6 +174,39 @@ button:hover {
 
 address, p {
 	padding: 10px 10px 10px 0;
+}
+
+/* cards*/
+.services {
+	padding: 10px;
+}
+.card-section {
+border-bottom: 1px solid black;
+border-top: 1px solid black;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+/* flex-wrap: wrap; */
+margin: 10px;
+padding: 10px;
+}
+
+.card {
+	border: 1px solid black;
+	width: 48%;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: rgb(226, 223, 223);
+}
+
+.card-row {
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+}
+.card button {
+	border-radius: 5%;
 }
 /* footer section*/
 footer {
