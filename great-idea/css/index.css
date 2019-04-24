@@ -129,6 +129,9 @@ button {
 	border: 1px solid #747070;
 	color: #747070;
 }
+button:hover {
+	background-color: aquamarine;
+}
 .details-section {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -153,7 +156,8 @@ button {
 	padding: 20px 20px 20px 0;
 }
 .contact-section {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	padding: 10px;
 	margin-top: 20px;
 }
