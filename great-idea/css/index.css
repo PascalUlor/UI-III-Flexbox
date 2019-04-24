@@ -137,14 +137,17 @@ button {
 	width: 100%;
 }
 
+.top-details, .bottom-details {
+	display: flex;
+	justify-content: space-between;
+}
+
 .features-section, .about-section {
-	display: inline-block;
 	width: 49%;
 	vertical-align: top;
 	padding: 20px 20px 20px 0;
 }
 .services-section, .product-section, .vision-section{
-	display: inline-block;
 	width: 33%;
 	vertical-align: top;
 	padding: 20px 20px 20px 0;
