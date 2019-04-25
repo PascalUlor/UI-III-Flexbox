@@ -3,19 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,49 +11,56 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 /* header section */
+
 header {
 	display: flex;
 	align-items: center;
@@ -76,6 +71,7 @@ header {
 	z-index: 1;
 	margin-top: -19px;
 }
+
 .logo-container {
 	padding: 10px;
 	margin-left: 80px;
@@ -83,32 +79,37 @@ header {
 }
 
 /* nav section */
+
 nav {
 	display: inline-block;
 	vertical-align: middle;
 }
+
 nav a {
 	padding: 15px 15px 15px 0;
 	margin: 20px 33px 20px 0;
 	text-decoration: none;
 	color: #ada8a8;
 }
+
 nav a:hover {
 	color: #000;
 	border-bottom: 1px solid #000;
 }
 
 /* main section */
+
 #cover-image {
 	background: #fff url('../img/services-header.jpg') center center no-repeat;
-    color: white;
-    height: 30vh;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    padding: 1.4rem;
-    margin-top: 5rem;
+	color: white;
+	height: 30vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	padding: 1.4rem;
+	margin-top: 5rem;
 }
+
 .container {
 	padding: 20px;
 	margin: auto;
@@ -121,8 +122,9 @@ nav a:hover {
 	margin-bottom: 50px;
 	margin-top: 100px;
 }
-	.main-content img{
-		margin-left: 60px;
+
+.main-content img {
+	margin-left: 60px;
 }
 
 .main-text {
@@ -131,7 +133,6 @@ nav a:hover {
 	width: 50%;
 }
 
-
 button {
 	padding: 5px 30px 5px 30px;
 	font-size: 20px;
@@ -139,9 +140,11 @@ button {
 	border: 1px solid #747070;
 	color: #747070;
 }
+
 button:hover {
 	background-color: aquamarine;
 }
+
 .details-section {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -160,11 +163,13 @@ button:hover {
 	vertical-align: top;
 	padding: 20px 20px 20px 0;
 }
-.services-section, .product-section, .vision-section{
+
+.services-section, .product-section, .vision-section {
 	width: 33%;
 	vertical-align: top;
 	padding: 20px 20px 20px 0;
 }
+
 .contact-section {
 	display: flex;
 	flex-direction: column;
@@ -177,18 +182,20 @@ address, p {
 }
 
 /* cards */
+
 .services {
 	padding: 10px;
 }
+
 .card-section {
-border-bottom: 2px solid black;
-border-top: 2px solid black;
-display: flex;
-align-items: center;
-justify-content: space-between;
-flex-direction: column;
-margin: 10px;
-padding: 10px;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	margin: 10px;
+	padding: 10px;
 }
 
 .card {
@@ -206,6 +213,7 @@ padding: 10px;
 	margin: 10px;
 	width: 104%;
 }
+
 .card button {
 	border-radius: 8%;
 	font-size: 10px;
@@ -217,62 +225,87 @@ padding: 10px;
 	margin: 25px;
 	width: 96%
 }
+
 .about-services p {
 	width: 85%
 }
+
 li {
 	list-style-type: disc;
 }
+
 /* footer section*/
+
 footer {
 	text-align: center;
 }
 
 /* media query */
+
 @media only screen and (max-width: 992px) {
+	.logo-container {
+		padding: 10px;
+		margin-left: -5px;
+		vertical-align: middle;
+	}
+	header {
+		padding: 5px;
+		margin-top: -19px;
+		width: 306px;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		height: 154px;
+	}
+	nav a {
+		padding: 15px 15px 15px 0;
+		margin: -11px 33px -13px 0;
+	}
+	#cover-image {
+		margin-top: 8rem;
+	}
 	.container {
 		padding: 20px;
 		margin: auto;
 		width: 96%;
 	}
 	/* cards */
-.card-section {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
+	.card-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.card {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.card-row {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	.card button {
+		border-radius: 8%;
+		font-size: 10px;
+	}
+	.facts-section {
+		margin: 10px;
+	}
+	.about-services {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 25px;
+		width: 96%
+	}
+	.about-services p {
+		width: 85%
+	}
+	li {
+		list-style-type: disc;
+	}
 }
-
-.card {
-	width: 100%;
-	margin-top: 10px;
-}
-
-.card-row {
-	display: flex;
-	justify-content: space-around;
-	flex-direction: column;
-}
-.card button {
-	border-radius: 8%;
-	font-size: 10px;
-}
-.facts-section {
-	margin: 10px;
-}
-
-.about-services {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	margin: 25px;
-	width: 96%
-}
-.about-services p {
-	width: 85%
-}
-li {
-	list-style-type: disc;
-}
-  }
-  
