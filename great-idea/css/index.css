@@ -174,6 +174,9 @@ address, p {
 /* footer section*/
 
 footer {
+	padding: 10px;
+}
+footer .last-text {
 	text-align: center;
 }
 
@@ -208,6 +211,32 @@ footer {
 	.container {
 		padding: 20px;
 		margin: auto;
+		width: 96%;
+	}
+	.main-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 165px;
+		flex-shrink: inherit;
+	}
+	.main-content img {
+		margin: auto;
+	}
+	
+	.main-text {
+		text-align: center;
+		margin: auto;
+	}
+	.top-details, .bottom-details {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.features-section, .about-section {
+		width: 96%;
+	}
+	
+	.services-section, .product-section, .vision-section {
 		width: 96%;
 	}
 }
